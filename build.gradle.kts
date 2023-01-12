@@ -23,6 +23,9 @@ dependencies {
 
 	implementation("com.graphql-java-kickstart:graphql-spring-boot-starter:14.0.0")
 
+	// test licensing on a PR with a GPL dependency
+	implementation("dropwizard-circuitbreake:2.0.0")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
