@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: synktest
+server:
+  port: 8090
+graphql:
+  tools:
+    schema-location-pattern: "**/*.graphqls"
+    introspection-enabled: true
+  servlet:
+    enabled: true
+    mapping: /graphql
+    cors-enabled: true
+    cors:
+      allowed-origins: "*"
+      allowed-methods: GET, HEAD, POST
+    exception-handlers-enabled: true
+  playground:
+    mapping: /playground
+    endpoint: /graphql
+springdoc:
+  swagger-ui:
+    path: "/swagger-ui/"
+  model-and-view-allowed: true

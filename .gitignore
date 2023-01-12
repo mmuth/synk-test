@@ -1,0 +1,9 @@
+.gradle/
+gradle/
+?/
+build/
+out/
+reports/
+!gradle/wrapper/gradle-wrapper.jar
+.gradletaskcache
+.idea/
